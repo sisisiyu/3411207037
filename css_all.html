@@ -31,11 +31,50 @@
         .text_letter{
             letter-spacing: 30px;
         }
+        /* 字型 */
+        /*字體樣式 */
+        .font_style{
+            /* 斜體 */
+            font-style: italic;
+        }
+        /* 字體粗細 */
+        .font_weight{
+            font-weight: bold;
+        }
+        /* 字體大小 */
+        .font_size{
+            font-size: 30px;
+        }
+        /* 字型 */
+        .font_family{
+           font-family: "標楷體";
+        }
+        /* Link連結 */
+        /* 未訪問 */
+        .a_link:link{
+            color: blue;
+        }
+        /* 訪問過 */
+        .a_link:visited{
+            color: red;
+        }
+        /* 移入 */
+        .a_link:hover{
+            color: yellow;
+        }
+        /* 點下去 */
+        .a_link:active{
+            color: black;
+        }
     </style>
 </head>
 <body>
 <div class="text_color text_align text_line text_decoration text_indent text_letter">
     text文字
 </div>   
+<div class="font_style font_weight font_size font_family">
+    font字型
+</div>
+<a href="#" class="a_link">Link連結</a>
 </body>
 </html>
