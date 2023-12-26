@@ -66,6 +66,54 @@
         .a_link:active{
             color: black;
         }
+        /* list列表 */
+        .list{
+            /* 類型 */
+            list-style-type: square;
+            /* 位置 */
+            list-style-position: inside;
+            /* 圖片 */
+            list-style-image: url('list.png');
+        }
+        /* tabla表格 */
+        /* 合併框線 */
+        .table_css{
+            border-collapse: collapse;
+        }
+        td{
+            /* 左右對齊 */
+            text-align: center;
+            /* 上下對齊 */
+            vertical-align: center;
+        }
+        /* 奇數行 */
+        tr:nth-child(odd){
+            color: red;
+        }
+        /* 偶數行 */
+        tr:nth-child(even){
+            color: blue;
+        }
+        /* 框線 */
+        .div_border{
+            /* 邊框粗細 */
+            border-width: 1px;
+            /* 邊框類型 */
+            border-style: solid;
+            /* 邊框顏色 */
+            border-color: red;
+        }
+        /* Padding留白 */
+        .div_padding{
+            /* 上、右、下、左 */
+            padding: 5px 10px 15px 50px;
+        }
+        /* margin外間距 */
+        .div_margin{
+            /* 上、左、下、右 */
+            margin: 5px 10px 15px 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -76,5 +124,33 @@
     font字型
 </div>
 <a href="#" class="a_link">Link連結</a>
+<ol class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<table class="table_css" border="1" cellpadding="0" cellspacing="0" width="300" height="300">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+</table>
+<div class="div_border">bordre邊框</div>
+<br>
+<div class="div_border div_padding">Padding留白</div>
+<br>
+<div class="div_border div_margin">margin外間距</div>
+
 </body>
 </html>
